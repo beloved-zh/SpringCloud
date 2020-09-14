@@ -11,12 +11,13 @@
         <module name="SpringCloud-eureka-7002" />
         <module name="SpringCloud-eureka-7001" />
         <module name="SpringCloud-provider-dept-hystrix-8000" />
+        <module name="SpringCloud-provider-dept-8000" />
         <module name="SpringCloud-consumer-hystrrix-dashboard-8888" />
         <module name="SpringCloud-consumer-dept-feign-8080" />
         <module name="SpringCloud-api" />
         <module name="SpringCloud-provider-dept-8002" />
+        <module name="SpringCloud-zuul-9527" />
         <module name="SpringCloud-provider-dept-8001" />
-        <module name="SpringCloud-provider-dept-8000" />
         <module name="SpringCloud-consumer-dept-8080" />
       </profile>
     </annotationProcessing>
