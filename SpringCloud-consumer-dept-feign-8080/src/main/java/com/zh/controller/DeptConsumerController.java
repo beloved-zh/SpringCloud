@@ -1,11 +1,9 @@
-package zh.controller;
+package com.zh.controller;
 
 import com.zh.pojo.Dept;
 import com.zh.service.DeptClientService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -17,15 +15,15 @@ import java.util.List;
 public class DeptConsumerController {
 
     @Autowired
-    private DeptClientService deptClientService = null;
+    private DeptClientService deptClientService;
 
-    @GetMapping("/consumer/dept/list")
+    @RequestMapping(value = "/consumer/dept/list", method = RequestMethod.GET)
     public List<Dept> list(){
         System.out.println("list");
         return this.deptClientService.findAll();
     }
 
-    @GetMapping("/consumer/dept/get/{id}")
+    @RequestMapping("/consumer/dept/get/{id}")
     public Dept get(@PathVariable("id") Long id){
         return this.deptClientService.findById(id);
     }

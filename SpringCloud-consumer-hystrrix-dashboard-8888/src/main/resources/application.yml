@@ -1,0 +1,8 @@
+server:
+  port: 8888
+
+# 访问监视页面报 Unable to connect to Command Metric Stream.
+# 可以在监视项目的application.yml中添加配置
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "*"

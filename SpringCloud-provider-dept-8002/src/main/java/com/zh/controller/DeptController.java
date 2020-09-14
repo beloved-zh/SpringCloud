@@ -1,5 +1,6 @@
 package com.zh.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.zh.pojo.Dept;
 import com.zh.service.DeptService;
 import org.springframework.beans.factory.annotation.Autowired;

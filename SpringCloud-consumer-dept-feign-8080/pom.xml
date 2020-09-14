@@ -12,6 +12,13 @@
     <artifactId>SpringCloud-consumer-dept-feign-8080</artifactId>
 
     <dependencies>
+        <!-- hystrix -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
+            <version>1.4.7.RELEASE</version>
+        </dependency>
+
         <!-- feign -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -49,6 +56,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.zh</groupId>
+            <artifactId>SpringCloud-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>

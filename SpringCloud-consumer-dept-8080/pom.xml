@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>SpringCloud-consumer-dept-80</artifactId>
+    <artifactId>SpringCloud-consumer-dept-8080</artifactId>
     <build>
         <plugins>
             <plugin>
