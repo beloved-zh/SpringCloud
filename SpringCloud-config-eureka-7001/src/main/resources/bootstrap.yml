@@ -1,0 +1,10 @@
+# 系统级别配置
+# 获取git远程配置
+
+spring:
+  cloud:
+    config:
+      name: config-eureka # git上的资源名称，不需要后缀
+      profile: 7001 # 配置环境选择
+      label: master # git分支选择
+      uri: http://localhost:3344 # config-server地址
