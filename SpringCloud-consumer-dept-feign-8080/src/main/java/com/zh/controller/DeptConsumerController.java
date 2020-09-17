@@ -19,7 +19,6 @@ public class DeptConsumerController {
 
     @RequestMapping(value = "/consumer/dept/list", method = RequestMethod.GET)
     public List<Dept> list(){
-        System.out.println("list");
         return this.deptClientService.findAll();
     }
 

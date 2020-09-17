@@ -1,7 +1,6 @@
 package com.myrule;
 
 import com.netflix.loadbalancer.IRule;
-import com.netflix.loadbalancer.RandomRule;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
@@ -15,8 +14,6 @@ import org.springframework.stereotype.Component;
 @Configuration
 @Component
 public class ZHRule {
-
-
 
     @Bean
     public IRule iRule(){

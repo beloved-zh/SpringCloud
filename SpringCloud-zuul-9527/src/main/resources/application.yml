@@ -24,6 +24,6 @@ zuul:
   routes: # 值是k-v k随便写
     dept.serviceId: springcloud-provider-dept # 原来的服务id
     dept.path: /dept/** # 自己定义的
-  # ignored-services: springcloud-provider-dept # 忽略这个服务，不能使用这个服务
+#  ignored-services: springcloud-provider-dept # 忽略这个服务，不能使用这个服务
   ignored-services: "*"  # *忽略全部服务名
   prefix: /zh # 公共前缀
